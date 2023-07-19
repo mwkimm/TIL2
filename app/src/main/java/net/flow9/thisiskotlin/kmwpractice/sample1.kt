@@ -4,23 +4,26 @@ import java.util.Arrays
 
 
     fun main() {
-        var num1 = 20
-        var num2 = 30.2
 
-        var num3 = num2.toInt()
-        var num4 = num1.toDouble()
+            var calc = Calculator()
 
-        var strNum5 = "10"
-        var strNum6 = "10.21"
+            var intResult = calc.add(1,2)
+            var doubleResult = calc.add(1.2, 2.2)
 
-        var num5 = Integer.parseInt(strNum5)
-        var num6 = strNum6.toDouble()
+            println("정수 덧셈결과: ${intResult}")
+            println("실수 덧셈결과: ${doubleResult}")
 
-        println("num3: $num3")
-        println("num4: $num4")
-        println("num5: $num5")
-        println("num6: $num6")
-        println("num6: $num6")
+        }
 
-    }
+        class Calculator {
+
+            fun add(num1: Int, num2: Int): Int {
+                return num1+num2
+            }
+
+            fun add(num1: Double, num2: Double): Double {
+                return num1+num2
+            }
+        }
+
 
