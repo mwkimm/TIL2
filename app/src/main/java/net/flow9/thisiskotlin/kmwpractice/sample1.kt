@@ -20,5 +20,7 @@ import java.util.Arrays
         println("num4: $num4")
         println("num5: $num5")
         println("num6: $num6")
+        println("num6: $num6")
+
     }
 
